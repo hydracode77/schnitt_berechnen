@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathis' Notenrechner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mathis' Notenrechner</h1>
+        </header>
+        <main>
+            <form id="gradeForm">
+                <div class="form-group">
+                    <label for="oralGrades">Mündliche Noten (mit Leerzeichen trennen):</label>
+                    <input type="text" id="oralGrades" required>
+                </div>
+                <div class="form-group">
+                    <label for="writtenGrades">Schriftliche Noten (mit Leerzeichen trennen):</label>
+                    <input type="text" id="writtenGrades" required>
+                </div>
+                <div class="form-group">
+                    <label for="ratio">Verhältnis auswählen:</label>
+                    <select id="ratio">
+                        <option value="1:1">1:1</option>
+                        <option value="2:1">2:1</option>
+                        <option value="3:2">3:2</option>
+                    </select>
+                </div>
+                <button type="submit">Berechnen</button>
+            </form>
+            <div class="result" id="result"></div>
+        </main>
+    </div>
+    <footer>
+        <p>© 2024 Notenrechner. Alle Rechte vorbehalten.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
